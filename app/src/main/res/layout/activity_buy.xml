@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".BuyActivity">
 
     <TextView
         android:id="@+id/topText"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:fontFamily="@font/blomberg"
-        android:text="Trivial App"
+        android:text="Buy Coins"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -38,7 +38,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/blomberg"
-                android:text="Coins Own"
+                android:text="Current Coins"
                 android:textColor="@color/white"
                 android:textSize="22dp" />
 
@@ -66,11 +66,14 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/catagoriesRC"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buyBtn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/coinsLayout"
-        tools:listitem="@layout/catagories_layout" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        android:text="Buy 25 coins"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

@@ -9,8 +9,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.moutamid.trivialapp.SharedPreferences;
 import com.moutamid.trivialapp.adapters.CategoryAdapter;
 import com.moutamid.trivialapp.database.CategoryDB;
@@ -43,16 +45,16 @@ public class MainActivity extends AppCompatActivity {
 
         // Storing data into SharedPreferences
         sharedPreferences = new SharedPreferences(this);
-        coinsTV.setText(""+sharedPreferences.getCoin());
+        coinsTV.setText("" + sharedPreferences.getCoin());
 
         database = CategoryDB.getInstance(this);
         try {
             categorylist = database.CategoryDAO().getAll();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
-        if (categorylist.isEmpty()){
+        if (categorylist.isEmpty()) {
             CategoryModel category1, category2, category3, category4, category5;
 
             category1 = new CategoryModel("Mathematics", true, R.drawable.math);
@@ -69,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
 
             categorylist.clear();
             categorylist.addAll(database.CategoryDAO().getAll());
-            adapter.notifyDataSetChanged();
+            if (adapter != null)
+                adapter.notifyDataSetChanged();
 
         }
 
@@ -79,30 +82,35 @@ public class MainActivity extends AppCompatActivity {
         adapter = new CategoryAdapter(this, categorylist, clickListner);
         catagoriesRC.setAdapter(adapter);
 
+        findViewById(R.id.coinsLayout).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, BuyActivity.class));
+        });
+
     }
 
     private CategoryClickListner clickListner = new CategoryClickListner() {
         @Override
         public void onClick(CategoryModel category) {
-            if (!category.isLockState()){
-                if (category.getCategoryName().contains("Mathematics")){
+            if (!category.isLockState()) {
+                if (category.getCategoryName().contains("Mathematics")) {
                     Intent intent = new Intent(MainActivity.this, QuestionsMathActivity.class);
                     startActivity(intent);
-                } else if (category.getCategoryName().contains("Puzzle")){
+                } else if (category.getCategoryName().contains("Puzzle")) {
                     Intent intent = new Intent(MainActivity.this, QuestionPuzzelsActivity.class);
                     startActivity(intent);
-                } else if (category.getCategoryName().contains("Science")){
+                } else if (category.getCategoryName().contains("Science")) {
                     Intent intent = new Intent(MainActivity.this, QuestionScienceActivity.class);
                     startActivity(intent);
-                } else if (category.getCategoryName().contains("Languages")){
+                } else if (category.getCategoryName().contains("Languages")) {
                     Intent intent = new Intent(MainActivity.this, QuestionLanguagesActivity.class);
                     startActivity(intent);
-                }else if (category.getCategoryName().contains("General")){
+                } else if (category.getCategoryName().contains("General")) {
                     Intent intent = new Intent(MainActivity.this, QuestionGeneralActivity.class);
                     startActivity(intent);
                 }
             } else {
-                dialog = new UnlockDialog(MainActivity.this, category, categorylist, adapter, coinsTV, sharedPreferences);
+                dialog = new UnlockDialog(MainActivity.this, category, categorylist,
+                        adapter, coinsTV, sharedPreferences);
                 dialog.show();
                 dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));

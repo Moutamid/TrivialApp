@@ -3,6 +3,7 @@ package com.moutamid.trivialapp.dialog;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.moutamid.trivialapp.BuyActivity;
 import com.moutamid.trivialapp.R;
 import com.moutamid.trivialapp.SharedPreferences;
 import com.moutamid.trivialapp.adapters.CategoryAdapter;
@@ -32,7 +34,8 @@ public class UnlockDialog extends Dialog implements android.view.View.OnClickLis
     int coinN;
     SharedPreferences preferences;
 
-    public UnlockDialog(Activity a, CategoryModel category, List<CategoryModel> list, CategoryAdapter adapter, TextView coins, SharedPreferences preferences) {
+    public UnlockDialog(Activity a, CategoryModel category, List<CategoryModel> list,
+                        CategoryAdapter adapter, TextView coins, SharedPreferences preferences) {
         super(a);
         this.c = a;
         this.category = category;
@@ -82,7 +85,7 @@ public class UnlockDialog extends Dialog implements android.view.View.OnClickLis
                 dismiss();
                 break;
             case R.id.btnBUY:
-                Toast.makeText(c.getApplicationContext(), "Buy", Toast.LENGTH_SHORT).show();
+                c.startActivity(new Intent(c, BuyActivity.class));
                 dismiss();
                 break;
             default:

@@ -44,7 +44,7 @@
                         android:fontFamily="@font/blomberg"
                         android:lineHeight="40dp"
                         android:padding="10dp"
-                        android:text="What is the answer For (25x14/5-45)"
+                        android:text="According to dictionary entries, which language has the largest number of words (more than 200,000 words)?"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
 
@@ -59,7 +59,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\t25"
+                            android:paddingHorizontal="10dp"
+                            android:text="Chinese"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -68,7 +69,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\t56"
+                            android:paddingHorizontal="10dp"
+                            android:text="English"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -77,7 +79,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\t14"
+                            android:paddingHorizontal="10dp"
+                            android:text="Spanish"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -86,7 +89,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\t27"
+                            android:paddingHorizontal="10dp"
+                            android:text="Japanese"
                             android:textColor="@color/white" />
 
 
@@ -119,7 +123,7 @@
                         android:fontFamily="@font/blomberg"
                         android:lineHeight="40dp"
                         android:padding="10dp"
-                        android:text="What is the Square Root of 246"
+                        android:text="Which of the following is not a Germanic language?"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
 
@@ -134,7 +138,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\15.684"
+                            android:paddingHorizontal="10dp"
+                            android:text="French"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -143,7 +148,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\18.64"
+                            android:paddingHorizontal="10dp"
+                            android:text="Swedish"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -152,7 +158,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\20"
+                            android:paddingHorizontal="10dp"
+                            android:text="Dutch"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -161,7 +168,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\55"
+                            android:paddingHorizontal="10dp"
+                            android:text="English"
                             android:textColor="@color/white" />
 
 
@@ -193,7 +201,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/blomberg"
                         android:padding="10dp"
-                        android:text="Add Your Question Here"
+                        android:text="Which of the following languages is related to Spanish the most?"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
 
@@ -208,7 +216,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\Ans One"
+                            android:paddingHorizontal="10dp"
+                            android:text="English"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -217,7 +226,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\Ans Two"
+                            android:paddingHorizontal="10dp"
+                            android:text="Italian"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -226,7 +236,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\Ans Three"
+                            android:paddingHorizontal="10dp"
+                            android:text="Danish"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -235,7 +246,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\Ans Four"
+                            android:paddingHorizontal="10dp"
+                            android:text="Other"
                             android:textColor="@color/white" />
 
 
@@ -267,7 +279,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/blomberg"
                         android:padding="10dp"
-                        android:text="Question"
+                        android:text="Which of the following languages has no alphabet?"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
 
@@ -282,7 +294,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Korean"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -291,7 +304,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Japanese"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -300,7 +314,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Chinese"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -309,7 +324,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="English"
                             android:textColor="@color/white" />
 
 
@@ -341,7 +357,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/blomberg"
                         android:padding="10dp"
-                        android:text="Question"
+                        android:text="Approximately how many languages are currently spoken in the world today?"
                         android:textColor="@color/white"
                         android:textSize="23dp" />
 
@@ -356,7 +372,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Around 1,000"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -365,7 +382,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Around 7,000"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -374,7 +392,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Around 30,000"
                             android:textColor="@color/white" />
 
                         <RadioButton
@@ -383,7 +402,8 @@
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/white"
                             android:fontFamily="@font/poppins"
-                            android:text="\t\tRadioButton"
+                            android:paddingHorizontal="10dp"
+                            android:text="Around 40,000"
                             android:textColor="@color/white" />
 
 

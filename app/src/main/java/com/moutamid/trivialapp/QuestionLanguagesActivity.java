@@ -31,24 +31,30 @@ public class QuestionLanguagesActivity extends AppCompatActivity {
         group5 = findViewById(R.id.radioGroup5);
 
         submit.setOnClickListener(v-> {
-            ans1 = findViewById(group1.getCheckedRadioButtonId());
-            ans2 = findViewById(group2.getCheckedRadioButtonId());
-            ans3 = findViewById(group3.getCheckedRadioButtonId());
-            ans4 = findViewById(group4.getCheckedRadioButtonId());
-            ans5 = findViewById(group5.getCheckedRadioButtonId());
-            if (A1 == ans1.getText().toString()){
+            int id1 = group1.getCheckedRadioButtonId();
+            int id2 = group2.getCheckedRadioButtonId();
+            int id3 = group3.getCheckedRadioButtonId();
+            int id4 = group4.getCheckedRadioButtonId();
+            int id5 = group5.getCheckedRadioButtonId();
+            ans1 = findViewById(id1);
+            ans2 = findViewById(id2);
+            ans3 = findViewById(id3);
+            ans4 = findViewById(id4);
+            ans5 = findViewById(id5);
+
+            if (A1.equals(ans1.getText().toString())){
                 Score++;
             }
-            if (A2 == ans2.getText().toString()){
+            if (A2.equals(ans2.getText().toString())){
                 Score++;
             }
-            if (A3 == ans2.getText().toString()){
+            if (A3.equals(ans3.getText().toString())){
                 Score++;
             }
-            if (A4 == ans4.getText().toString()){
+            if (A4.equals(ans4.getText().toString())){
                 Score++;
             }
-            if (A5 == ans5.getText().toString()){
+            if (A5.equals(ans5.getText().toString())){
                 Score++;
             }
             Toast.makeText(this, "You Score " + Score + "/5", Toast.LENGTH_SHORT).show();

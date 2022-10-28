@@ -85,8 +85,20 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(CategoryModel category) {
             if (!category.isLockState()){
-                if (category.getCategoryName().contains("Math")){
+                if (category.getCategoryName().contains("Mathematics")){
                     Intent intent = new Intent(MainActivity.this, QuestionsMathActivity.class);
+                    startActivity(intent);
+                } else if (category.getCategoryName().contains("Puzzle")){
+                    Intent intent = new Intent(MainActivity.this, QuestionPuzzelsActivity.class);
+                    startActivity(intent);
+                } else if (category.getCategoryName().contains("Science")){
+                    Intent intent = new Intent(MainActivity.this, QuestionScienceActivity.class);
+                    startActivity(intent);
+                } else if (category.getCategoryName().contains("Languages")){
+                    Intent intent = new Intent(MainActivity.this, QuestionLanguagesActivity.class);
+                    startActivity(intent);
+                }else if (category.getCategoryName().contains("General")){
+                    Intent intent = new Intent(MainActivity.this, QuestionGeneralActivity.class);
                     startActivity(intent);
                 }
             } else {

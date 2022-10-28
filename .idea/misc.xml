@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_question_general.xml" value="0.1718683197947841" />
+        <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_question_languages.xml" value="0.16032492518170158" />
+        <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_question_science.xml" value="0.1718683197947841" />
         <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_questions.xml" value="0.25" />
         <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_questions_math.xml" value="0.18" />
         <entry key="..\:/BridgeLinxProject/TrivialApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />

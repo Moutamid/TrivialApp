@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categoryCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_marginStart="20sp"
+    android:layout_marginEnd="20sp"
+    android:layout_marginTop="12dp"
+    app:cardBackgroundColor="@color/dark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cataogryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/blomberg"
+                android:text="Catagory Name"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/lockState"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/padlock"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@id/cataogryName"/>
+
+            <ImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/math" />
+
+            <TextView
+                android:id="@+id/lockStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cataogryName"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Unlock with Coins"
+                android:textColor="@color/grey" />
+
+        </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

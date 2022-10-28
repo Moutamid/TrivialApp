@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TrivialApp</string>
+    <string name="square_root_symbol">\u221a</string>
+</resources>

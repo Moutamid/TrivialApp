@@ -91,5 +91,4 @@ public class BuyActivity extends AppCompatActivity implements BillingProcessor.I
         super.onPause();
         sharedPreferences.saveCoin(sharedPreferences.getCoin());
     }
-
 }

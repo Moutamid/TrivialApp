@@ -31,15 +31,46 @@ public class BuyActivity extends AppCompatActivity implements BillingProcessor.I
         coinsTV.setText("" + sharedPreferences.getCoin());
 
 
-        findViewById(R.id.buyBtn).setOnClickListener((View.OnClickListener) view -> {
+        findViewById(R.id.buyBtn5).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
-            int s1 = sharedPreferences.getCoin();
-
-            sharedPreferences.saveCoin(s1 + 25);
-
-            coinsTV.setText(String.valueOf(sharedPreferences.getCoin()));
+            buyFunc(5);
         });
 
+        findViewById(R.id.buyBtn10).setOnClickListener((View.OnClickListener) view -> {
+            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            buyFunc(10);
+        });
+        findViewById(R.id.buyBtn20).setOnClickListener((View.OnClickListener) view -> {
+            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            buyFunc(20);
+        });
+
+        findViewById(R.id.buyBtn50).setOnClickListener((View.OnClickListener) view -> {
+            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            buyFunc(50);
+        });
+        findViewById(R.id.buyBtn100).setOnClickListener((View.OnClickListener) view -> {
+            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            buyFunc(100);
+        });
+        findViewById(R.id.buyBtn200).setOnClickListener((View.OnClickListener) view -> {
+            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            buyFunc(200);
+        });
+
+        findViewById(R.id.buyBtn300).setOnClickListener((View.OnClickListener) view -> {
+            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            buyFunc(300);
+        });
+
+    }
+
+    public void buyFunc(int price){
+        int s1 = sharedPreferences.getCoin();
+
+        sharedPreferences.saveCoin(s1 + price);
+
+        coinsTV.setText(String.valueOf(sharedPreferences.getCoin()));
     }
 
     @Override

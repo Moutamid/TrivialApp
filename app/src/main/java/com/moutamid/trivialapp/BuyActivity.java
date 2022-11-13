@@ -32,21 +32,21 @@ public class BuyActivity extends AppCompatActivity implements BillingProcessor.I
 
 
         findViewById(R.id.buyBtn5).setOnClickListener((View.OnClickListener) view -> {
-            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            bp.purchase(BuyActivity.this, Constants.FIVE_DOLLAR_PRODUCT);
             buyFunc(5);
         });
 
         findViewById(R.id.buyBtn10).setOnClickListener((View.OnClickListener) view -> {
-            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            bp.purchase(BuyActivity.this, Constants.TEN_DOLLAR_PRODUCT);
             buyFunc(10);
         });
         findViewById(R.id.buyBtn20).setOnClickListener((View.OnClickListener) view -> {
-            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            bp.purchase(BuyActivity.this, Constants.TWENTY_DOLLAR_PRODUCT);
             buyFunc(20);
         });
 
         findViewById(R.id.buyBtn50).setOnClickListener((View.OnClickListener) view -> {
-            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            bp.purchase(BuyActivity.this, Constants.FIFTY_DOLLAR_PRODUCT);
             buyFunc(50);
         });
         findViewById(R.id.buyBtn100).setOnClickListener((View.OnClickListener) view -> {
@@ -54,12 +54,12 @@ public class BuyActivity extends AppCompatActivity implements BillingProcessor.I
             buyFunc(100);
         });
         findViewById(R.id.buyBtn200).setOnClickListener((View.OnClickListener) view -> {
-            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            bp.purchase(BuyActivity.this, Constants.TWO_HUNDRED_DOLLAR_PRODUCT);
             buyFunc(200);
         });
 
         findViewById(R.id.buyBtn300).setOnClickListener((View.OnClickListener) view -> {
-            bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
+            bp.purchase(BuyActivity.this, Constants.THREE_HUNDRED_DOLLAR_PRODUCT);
             buyFunc(300);
         });
 

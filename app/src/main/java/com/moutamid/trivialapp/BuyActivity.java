@@ -33,39 +33,32 @@ public class BuyActivity extends AppCompatActivity implements BillingProcessor.I
 
         findViewById(R.id.buyBtn5).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.FIVE_DOLLAR_PRODUCT);
-            buyFunc(5);
         });
 
         findViewById(R.id.buyBtn10).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.TEN_DOLLAR_PRODUCT);
-            buyFunc(10);
         });
         findViewById(R.id.buyBtn20).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.TWENTY_DOLLAR_PRODUCT);
-            buyFunc(20);
         });
 
         findViewById(R.id.buyBtn50).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.FIFTY_DOLLAR_PRODUCT);
-            buyFunc(50);
         });
         findViewById(R.id.buyBtn100).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.HUNDRED_DOLLAR_PRODUCT);
-            buyFunc(100);
         });
         findViewById(R.id.buyBtn200).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.TWO_HUNDRED_DOLLAR_PRODUCT);
-            buyFunc(200);
         });
 
         findViewById(R.id.buyBtn300).setOnClickListener((View.OnClickListener) view -> {
             bp.purchase(BuyActivity.this, Constants.THREE_HUNDRED_DOLLAR_PRODUCT);
-            buyFunc(300);
         });
 
     }
 
-    public void buyFunc(int price){
+    public void buyFunc(int price) {
         int s1 = sharedPreferences.getCoin();
 
         sharedPreferences.saveCoin(s1 + price);
@@ -77,12 +70,26 @@ public class BuyActivity extends AppCompatActivity implements BillingProcessor.I
     public void onProductPurchased(@NonNull String productId, @Nullable PurchaseInfo details) {
         Toast.makeText(BuyActivity.this, "Purchase successful", Toast.LENGTH_SHORT).show();
 
+        if (productId.equals(Constants.FIVE_DOLLAR_PRODUCT)) {
+            buyFunc(5);
+        }
+        if (productId.equals(Constants.TEN_DOLLAR_PRODUCT)) {
+            buyFunc(10);
+        }
+        if (productId.equals(Constants.TWENTY_DOLLAR_PRODUCT)) {
+            buyFunc(20);
+        }
+        if (productId.equals(Constants.FIFTY_DOLLAR_PRODUCT)) {
+            buyFunc(50);
+        }
         if (productId.equals(Constants.HUNDRED_DOLLAR_PRODUCT)) {
-            int s1 = sharedPreferences.getCoin();
-
-            sharedPreferences.saveCoin(s1 + 25);
-
-            coinsTV.setText(String.valueOf(sharedPreferences.getCoin()));
+            buyFunc(100);
+        }
+        if (productId.equals(Constants.TWO_HUNDRED_DOLLAR_PRODUCT)) {
+            buyFunc(200);
+        }
+        if (productId.equals(Constants.THREE_HUNDRED_DOLLAR_PRODUCT)) {
+            buyFunc(300);
         }
 
     }

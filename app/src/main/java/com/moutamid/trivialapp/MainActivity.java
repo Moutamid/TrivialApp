@@ -1,19 +1,16 @@
 package com.moutamid.trivialapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.moutamid.trivialapp.SharedPreferences;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.moutamid.trivialapp.adapters.CategoryAdapter;
 import com.moutamid.trivialapp.database.CategoryDB;
 import com.moutamid.trivialapp.dialog.UnlockDialog;
@@ -37,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Constants.checkApp(this);
         catagoriesRC = findViewById(R.id.catagoriesRC);
         coinsTV = findViewById(R.id.totalCoins);
 
